@@ -16,7 +16,6 @@ import javax.swing.JOptionPane;
 import javax.swing.JPanel;
 import javax.swing.Timer;
 
-import com.mine.Mine;
 import com.thread.PlaySoundThread;
 import com.ui.button.MapButton;
 import com.util.WindowUtil;
@@ -113,7 +112,6 @@ public class MinesweeperFrame extends KFrame
 		// 新游戏按钮
 		newGameButton = new JButton("新游戏");
 		newGameButton.setFont(new Font("宋体", Font.CENTER_BASELINE, 18));
-		newGameButton.setBackground(Mine.NORMAL_COLOR);
 		newGameButton.setFocusPainted(false);
 		newGameButton.addActionListener(this);
 		headPanel.add(newGameButton);
@@ -121,7 +119,6 @@ public class MinesweeperFrame extends KFrame
 		// 自定义游戏按钮
 		customGameButton = new JButton("自定义");
 		customGameButton.setFont(new Font("宋体", Font.CENTER_BASELINE, 18));
-		customGameButton.setBackground(Mine.NORMAL_COLOR);
 		customGameButton.setFocusPainted(false);
 		customGameButton.addActionListener(this);
 		headPanel.add(customGameButton);
